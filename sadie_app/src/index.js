@@ -4,20 +4,20 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Home from './components/Home';
-import About from './components/About';
-import Pricing from './components/Pricing';
+import Home from './components/Home/home';
+import About from './components/About/about';
+import Pricing from './components/Pricing/pricing';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App /> }>
-          <Route path='/' element={<Home />}/>
-          <Route path='/home' element={<Home />}/>
-          <Route path='/about' element={<About />}/>
-          <Route path='/pricing' element={<Pricing />}/>
+        <Route path="/" element={<App /> }>
+          <Route path="" element={<Home />}/>
+          <Route path="/home" element={<Home />}/>
+          <Route path="/about" element={<About />}/>
+          <Route path="/pricing" element={<Pricing />}/>
         </Route>
       </Routes>
     </BrowserRouter>
