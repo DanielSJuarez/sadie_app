@@ -8,7 +8,7 @@ function Footer () {
     <div>
       <div>Let's Talk</div>
       <div>
-        Thinking we may be a good match? Let’s meet up for coffee or tea to be sure!
+        Thinking we may be a good match? Let's meet up for coffee or tea to be sure!
       </div>
       <div className='button' onClick={() => navigate('/contact')}>Schedule a coffee date</div>
     </div>
@@ -16,7 +16,7 @@ function Footer () {
       <div>
         <div>Service Area</div>
         <div>
-          Update, SC
+          Upstate, SC
         </div>
       </div>
       <div>
