@@ -12,14 +12,14 @@ function TopNav() {
     }
 
     return (
-        <div>
+        <div className='nav-wrapper'>
             <div className='nav-container'>
             <div className='button' onClick={() => updatePageTitle({title: '', route: '/home'})}>Home</div>
             <div className='button' onClick={() => updatePageTitle({title: 'About Me', route: '/about'})}>About Me</div>
             <div className='button' onClick={() => updatePageTitle({title: 'Services', route: '/services'})}>Services</div>
             <div className='button' onClick={() => updatePageTitle({title: 'Schedule Meet + Greet', route: '/contact'})}>Contact Me</div>
             </div>
-            <div>{pageTitle}</div>
+            <div className='page-title'>{pageTitle}</div>
         </div>
     )
 }

@@ -1,17 +1,33 @@
+.nav-wrapper{
+    background-color: rgb(251, 241, 231);
+}
+
 .nav-container{
     display: flex;
+    justify-content: right;
 }
 
-
-.button {
-    border: solid 3px;
-    max-width: 100px;
-    padding: 10px;
-    margin: 10px;
+.page-title{
+    padding: 20px;
     text-align: center;
+    font-size: 40px;
 }
 
-.button:hover {
-    background-color: aqua;
-    cursor: pointer;
+@media (max-width: 750px) {
+    .nav-wrapper {
+      height: auto;
+      border-right: none;
+      padding: 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    }
+
+    .nav-container{
+        justify-content: space-around;
+    }
+
+    .page-title{
+        display: none;
+    }
 }
